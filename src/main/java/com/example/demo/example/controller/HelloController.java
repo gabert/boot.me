@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  *    1) ResponseEntity return {@link #sayHelloV1(String)}
  *    2) POJO return {@link #sayHelloV2(String)}
  * d) valid vendor media type 'application/vnd.example.hello'
+ * e) documenting the API by Swagger {@link #sayHelloV1(String)}
  */
 @RestController
 public class HelloController {
