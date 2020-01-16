@@ -8,6 +8,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Example controller demonstrating
+ *
+ * a) API versioning by media type negotiation {@link #sayHelloV1(String)} {@link #sayHelloV2(String)}
+ * b) API response for not supported version {@link #sayHelloV3(String)}
+ * c) Two different ways to build response
+ *    1) ResponseEntity return {@link #sayHelloV1(String)}
+ *    2) POJO return {@link #sayHelloV2(String)}
+ * d) valid vendor media type 'application/vnd.example.hello'
+ */
 @RestController
 public class HelloController {
     private static final String MEDIA_TYPE_EXAMPLE_HELLO = "application/vnd.example.hello";
