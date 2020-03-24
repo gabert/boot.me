@@ -1,9 +1,9 @@
-package com.example.demo.example.controller;
+package com.github.gabert.bootme.controller.versiondemo;
 
-public class HelloV2 {
+public class HelloV2Response {
     private final String fullName;
 
-    public HelloV2(String fullName) {
+    public HelloV2Response(String fullName) {
         this.fullName = fullName;
     }
 
